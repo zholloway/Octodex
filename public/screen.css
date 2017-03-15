@@ -1,8 +1,139 @@
 html {
-  text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
   font: 16px / 1 sans-serif;
 }
+
+/*
+///
+Navbar
+///
+*/
+nav {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: lightgrey;
+  max-width: 20%;
+  max-height: 8%;
+  font-size: .35em;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+li {
+  margin-left: 1em;
+}
+
+h1 {
+  margin: 0;
+}
+
+/*
+///
+Octoblock
+///
+*/
+
+.octoContainer {
+  margin-top: .7em;
+  display: flex;
+  flex-direction: column;
+}
+
+.catImage {
+  max-width: 340px;
+  max-height: 340px;
+  margin: auto;
+}
+
+.catImage img {
+  padding: .3em;
+  border: .07em solid grey;
+  margin-bottom: 0;
+}
+
+.triangle {
+  max-width: 340px;
+  margin-top: -.45em;
+  margin-left: 20em;
+  padding: 0;
+}
+
+.triang img{
+  margin-bottom:1em;
+}
+
+.catInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 340px;
+  margin: auto;
+}
+
+.catInfo p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.catInfo .number {
+  font-size: .7em;
+  margin-right: 2em;
+}
+
+.catInfo .title {
+  font-size: .7em;
+  margin-left: 7.8em;
+  margin-right: 1em;
+}
+
+/*
+///
+Media Query
+///
+*/
+
+@media (min-width: 480px) {
+
+  nav {
+    margin-top: 0;
+    max-width: 100%;
+    flex-direction: row;
+  } 
+
+  h1 {
+    font-size: 5em;
+    padding-bottom: .5em;
+    padding-top: .5em;
+  }
+
+  ul {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 3em;
+    margin-left: 65%;
+    padding-bottom: .5em;
+    padding-top: .5em
+  }
+
+  .row1 {
+    display: flex;
+  }
+
+  .row2 {
+    display: flex;
+  }
+
+  .triangle {
+    margin-left: 18em;
+  }
+}
+
